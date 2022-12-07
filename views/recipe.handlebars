@@ -1,0 +1,30 @@
+<div class="main__container">
+    <div class="content">
+        <div class="card">
+            <div class="user">
+                <img class="user" src={{recipe.img}} alt="recipe image">
+                <div class="profile">
+                    <div class="name">{{ recipe.name }}</div>
+                    <div class="local">
+                        <span>{{ recipe.description }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="no">
+                <a href="/recipe/nolike/{{recipe_id}}">
+                <i class="fas fa-times"></i>
+                </a>
+            </div>
+            <div class="heart">
+                <a href="/recipe/like/{{recipe_id}}">
+                <i class="fas fa-heart"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/ca87b5ac68.js" crossorigin="anonymous"></script>

@@ -1,0 +1,19 @@
+<div class="recipes" id="recipes">
+    <h1>Our Recipes!</h1>
+    <div class="recipes__wrapper">
+
+        {{#each recipe}}
+        <div class="recipes__card">
+            <div class="img-container">
+                <img style="" src="{{img}}">
+            </div>
+            <h2>{{name}}</h2>
+            <p style="font-size:small;">{{description}}</p>
+        </div>
+        {{/each}}
+
+    </div>
+</div>
+
+  <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/ca87b5ac68.js" crossorigin="anonymous"></script>
